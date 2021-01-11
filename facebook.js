@@ -1,4 +1,4 @@
-let database=[
+const database=[
     {
         username:'Isam',
         password:'12'
@@ -12,7 +12,7 @@ let database=[
         password:'1234'
     },
 ]
-let newsfeed=[
+const newsfeed=[
     {
         username:'Melika',
         timeline:'We were at the pool today!'
@@ -26,8 +26,8 @@ let newsfeed=[
         timeline:'I burned the food today '
     }
 ]
-let usernamePrompt=prompt('Your username?');
-let passwordPrompt=prompt('Your password?');
+const usernamePrompt=prompt('Your username?');
+const passwordPrompt=prompt('Your password?');
 function isUsernameValid(user,pass){
     for(let i=0;i<database.length;i++){
         if (user===database[i].username&&pass===database[i].password){

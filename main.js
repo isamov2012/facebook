@@ -37,9 +37,12 @@ function isUsernameValid(user, pass) {
   return false;
 }
 function signIn(user, pass) {
-  isUsernameValid(user, pass)
-    ? console.log(newsfeed)
-    : alert("wrong username and password!");
+  if (isUsernameValid(user, pass)) {
+    alert("check out the browsers dev console.");
+    console.log(newsfeed);
+  } else {
+    alert("wrong username and/or password!");
+  }
 }
 signIn(usernamePrompt, passwordPrompt);
 document.getElementsByClassName("listElement")[
